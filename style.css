@@ -159,47 +159,113 @@
             50% { transform: translateY(-5px); }
         }
 
-        .contact-container {
-            background: #fff;
-            margin: 0 auto;
-            padding: 30px;
-            width: 550px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-        }
 
-        .contact-form input,
-        .contact-form textarea {
-            width: 95%;
-            padding: 12px;
+
+        /* CONTACT FORM STYLING - matches existing design */
+        .contactusform {
+            max-width: 700px;
+            margin: 80px auto;
+            text-align: center;
+            background-color: #fff;
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .contactusform h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 32px;
+            font-weight: bold;
+            color: #2c3e50;
             margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .contact-form button {
-            width: 100%;
-            padding: 12px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        .contact-form button:hover {
-            background-color: #0056b3;
-        }
-
-        .contactush2 {
             text-decoration: underline;
         }
-
-        .contactusform {
-            padding-right: 100px;
+        
+        .contactusform p {
+            font-size: 17px;
+            color: #555;
+            margin-bottom: 25px;
+            font-family: 'Roboto Mono', monospace;
         }
+        
+        /* Contact form container box */
+        .contact-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+        
+        /* Label and input field styling */
+        .contact-form label {
+            font-family: 'Poppins', sans-serif;
+            color: #2c3e50;
+            font-size: 16px;
+            display: block;
+            text-align: left;
+            margin-bottom: 6px;
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            margin-bottom: 18px;
+            font-family: 'Roboto Mono', monospace;
+            transition: all 0.3s ease;
+            background-color: #fafafa;
+        }
+        
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: #f1948a;
+            box-shadow: 0 0 8px rgba(241, 148, 138, 0.3);
+            background-color: #fff;
+        }
+        
+        /* Send button design */
+        .send-btn {
+            width: 100%;
+            background-color: #f1948a;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        
+        .send-btn:hover {
+            background-color: #f5c6cb;
+            color: #2c3e50;
+            transform: translateY(-2px);
+            box-shadow: 0 3px 10px rgba(241, 148, 138, 0.3);
+        }
+        
+        /* Responsive design for mobile */
+        @media (max-width: 768px) {
+            .contactusform {
+                width: 90%;
+                padding: 25px;
+            }
+        
+            .contact-container {
+                padding: 20px;
+            }
+        
+            .send-btn {
+                font-size: 16px;
+            }
+        }
+
+
+
 
         .homebbs {
             text-decoration: none;
@@ -270,3 +336,4 @@
         .footerfinal {
             font-size: smaller;
         }
+
