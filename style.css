@@ -113,7 +113,7 @@ body {
 }
 
 .resume-download a:hover{
-  background-color: #FFA500;
+  color: #FFA500;
 }
 
 /* Contact */
@@ -200,3 +200,4 @@ body {
     padding: 1rem;
   }
 }
+
